@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Alpar Consulting">
+  <link rel="apple-touch-icon" href="logo.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alpar</title>
+  <link rel="icon" href="icon.png" sizes="16x32" type="image/png">
+  <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="pop.css">
+  <link rel="stylesheet" href="exit.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <section id="service">
+    <div class="logo">
+      <img src="icon.png" alt="">
+  </div>
+  
+<div class="card">
+  <div class="title">Specialist Engineering Services</div>
+<div class="content">
+  <input type="checkbox" name="t1" id="one" class="rd" value="Engineering Management">
+  <input type="checkbox" name="t2" id="two" class="rd" value="System & Safety Assurance">
+  <input type="checkbox" name="t3" id="three" class="rd" value="Risk Management">
+
+  <label for="one" class="box first" value="Engineering Management">
+    <div class="plan">
+    <span class="circle"></span>
+    <span class="yearly">Engineering Management</span>
+  </div>
+  </label>
+  
+  <label for="two" class="box second">
+    <div class="plan">
+    <span class="circle"></span>
+    <span class="yearly">System & Safety Assurance </span>
+  </div>
+   </label>
+  <label for="three" class="box third">
+    <div class="plan">
+    <span class="circle"></span>
+      <span class="yearly">Risk Management</span>
+    </div>
+  </label>
+</div>
+</div>
+<div class="card">
+  <div class="title">Tech Services</div>
+<div class="content">
+  <input type="checkbox" name="t22" id="four" class="rd" value="Business Intelligence">
+  <input type="checkbox" name="t22" id="five" class="rd" value="Organisational Systems">
+
+  <label for="four" class="box four">
+  
+    <div class="plan">
+    <span class="circle"></span>
+    <span class="yearly">Business Intelligence</span>
+  </div>
+  </label>
+  <label for="five" class="box five">
+    <div class="plan">
+    <span class="circle"></span>
+    <span class="yearly">Organisational Systems</span>
+  </div>
+  </label>
+</div>
+</div>
+<div class="card">
+  <div class="title">Support Length</div>
+<div class="content">
+  <input type="checkbox" name="t33" id="seven" class="rd" value="Single Project">
+  <input type="checkbox" name="t33" id="eight" class="rd" value="Ad hoc support">
+  <input type="checkbox" name="t33" id="nine" class="rd" value="Long term resource">
+
+  <label for="seven" class="box seven">
+    <div class="plan">
+    <span class="circle"></span>
+    <span class="yearly">Single Project</span>
+  </div>
+  </label>
+  <label for="eight" class="box eight">
+    <div class="plan">
+    <span class="circle"></span>
+    <span class="yearly">Ad hoc support</span>
+  </div>
+  </label>
+  <label for="nine" class="box nine">
+    <div class="plan">
+    <span class="circle"></span>
+      <span class="yearly">Long term resource</span>
+    </div>
+  </label>
+</div>
+</div>
+
+<textarea type="text" id="message1" placeholder="services" cols="30" rows="10" style="display: none;"></textarea>
+<a href="#form"><input type="submit" id="submit2" onclick="myfunction()"
+  value="Quick assist" class="btn solid"></a>
+
+  </section>
+ 
+
+<section id="form" style="display: none;">
+  <div class="card">
+    <div class="title">Name *</div>
+  <div class="content">
+    <i class="fa fa-user" aria-hidden="true"></i>
+    <input type="text"  placeholder="Enter Name" name="Name" id="name">
+  </div>
+    </div>
+    <div class="card">
+      <div class="title">Industry / Company *</div>
+    <div class="content">
+      <i class="fa fa-building" aria-hidden="true"></i>
+      <input type="text"  placeholder="Enter Industry / Company" name="Company" id="company">
+    </div>
+      </div>
+      <div class="card">
+        <div class="title">Email *</div>
+      <div class="content">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <input type="email" placeholder="Enter Email" name="Email" id="email">
+      </div>
+        </div>
+        <div class="card">
+          <div class="title">Phone </div>
+        <div class="content">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <input type="phone" placeholder="Enter Phone" name="Phone" id="phone">
+        </div>
+          </div>
+          <div class="card">
+            <div class="title">Message </div>
+          <div class="content">
+            <i class="fa fa-comments-o" aria-hidden="true"></i>
+            <textarea name="message" id="message" cols="25" rows="7" placeholder="Message / Enquiry"></textarea>
+          </div>
+            </div>
+ <input onclick="submitToAPI(event)" type="submit" id="submit" value="Submit" class="btn solid"></a>
+</section>
+  <!--<a href="four.html"> <input onClick="submitToAPI(event)"  type="submit" id="submit" value="Submit" class="btn solid"></a>-->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="serviceworker.js"></script>
+  <script src="api.js"></script>
+  <script src="pop.js"></script>
+  <script src="exit.js"></script>
+
+
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function myfunction(){
+      document.getElementById("form").style.display = "block";
+      document.getElementById("service").style.display = "none";
+    }
+  </script>
+  
+
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+    $('.rd').click(function(){
+      var text = "";
+      $('.rd:checked').each(function(){
+        text+=$(this).val()+ ', ';
+    });
+    text=text.substring(0,text.length-1);
+    $("#message1").val(text);
+      });
+    });
+    </script>
+
+  
+  <script src="exit.js"></script>
+
+
+
+
+
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('serviceworker.js')
+          .then((reg) => console.log('Success: ', reg.scope))
+          .catch((err) => console.log('Failure: ', err));
+      })
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="form.css">
+    <link rel="icon" href="icon.png" type="image/png" sizes="16x32" >
+    <meta name="theme-color" content="#000000">
+  <meta name="description" content="Alpar Consulting">
+  <link rel="apple-touch-icon" href="icon.png" type="image/png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="exit.css">
+  <link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  
+      <div class="logo">
+        <img src="icon.png" alt="">
+    </div>
+    
+ <div class="card">
+    <div class="title">Specialist Engineering Services</div>
+  <div class="content">
+    <input type="checkbox" name="rd" id="one" class="rd">
+    <input type="checkbox" name="rd" id="two" class="rd">
+    <input type="checkbox" name="rd" id="three" class="rd">
+  
+    <label for="one" class="box first">
+      <div class="plan">
+      <span class="circle"></span>
+      <span class="yearly">Engineering Management</span>
+    </div>
+    </label>
+    
+    <label for="two" class="box second">
+      <div class="plan">
+      <span class="circle"></span>
+      <span class="yearly">System & Safety Assurance </span>
+    </div>
+     </label>
+    <label for="three" class="box third">
+      <div class="plan">
+      <span class="circle"></span>
+        <span class="yearly">Risk Management</span>
+      </div>
+    </label>
+  </div>
+ </div>
+ <div class="card">
+    <div class="title">Tech Services</div>
+  <div class="content">
+    <input type="checkbox" name="ch" id="four" class="ch">
+    <input type="checkbox" name="ch" id="five" class="ch">
+  
+    <label for="four" class="box four">
+    
+      <div class="plan">
+      <span class="circle"></span>
+      <span class="yearly">Business Intelligence</span>
+    </div>
+    </label>
+    <label for="five" class="box five">
+      <div class="plan">
+      <span class="circle"></span>
+      <span class="yearly">Organisational Systems</span>
+    </div>
+    </label>
+  </div>
+ </div>
+ <div class="card">
+    <div class="title">Support Length</div>
+  <div class="content">
+    <input type="checkbox" name="kl" id="seven" class="kl">
+    <input type="checkbox" name="kl" id="eight" class="kl">
+    <input type="checkbox" name="kl" id="nine" class="kl">
+  
+    <label for="seven" class="box seven">
+      <div class="plan">
+      <span class="circle"></span>
+      <span class="yearly">Single Project</span>
+    </div>
+    </label>
+    <label for="eight" class="box eight">
+      <div class="plan">
+      <span class="circle"></span>
+      <span class="yearly">Ad hoc support</span>
+    </div>
+    </label>
+    <label for="nine" class="box nine">
+      <div class="plan">
+      <span class="circle"></span>
+        <span class="yearly">Long term resource</span>
+      </div>
+    </label>
+  </div>
+ </div>
+ <a href="form.html"><input type="submit" id="submit"
+  value="Quick assist" class="btn solid"></a>
+
+ 
+   <!--<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>-->
+   
+   <script src="exit.js"></script>
+   <script src="api.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   
+   
+ <!--<script>
+  function exitpage(){
+      Swal.fire({
+title: 'Exit Page',
+text: "Are you sure to exit?",
+icon: 'warning',
+showCancelButton: true,
+confirmButtonColor: '#3085d6',
+cancelButtonColor: '#d33',
+confirmButtonText: 'YES',
+cancelButtonText: 'NO'
+}).then(function (result) {
+  if (result.value) {
+      window.location = "Default.aspx";
+}
+})
+  }
+</script>-->
+  
+ 
+
+
+  
+
+
+
+
+
+   <script>
+    if('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('serviceworker.js')
+                .then((reg) => console.log('Success: ', reg.scope))
+                .catch((err) => console.log('Failure: ', err));
+        })
+    }
+</script>
+</body>
+</html>
